@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	background: green;
+	font-size: 2rem;
+	color: #000;
+}
+.gridContainer {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+/*.diler {
+	width: 100%;
+}*/
+.player {
+	margin: 0 0 50px;
+	font-size: 3rem;
+}
+.diler {
+	font-size: 3rem;
+	
+}
+#dilerCards, #playerCards {
+	width: 400px;
+	height: 60px;
+	background: #fff;
+	border: 1px solid #000;
+	display: inline-block;
+	margin: 50px 50px 0 0;
+	position: relative;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+#dilerCards::before {
+	content: 'Дилер';
+	position: absolute;
+	color: #fff;
+	font-size: 3rem;
+	top: -40px;
+	left: 0;
+	
+}
+#playerCards::before {
+	content: 'Игрок';
+	position: absolute;
+	color: #fff;
+	font-size: 3rem;
+	top: -40px;
+	left: 0;
+}
+#dilerPoints, #playerPoints {
+	width: 70px;
+	height: 60px;
+	background: #fff;
+	border: 1px solid #000;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	padding-top: 10px;
+}
+#dilerPoints::before, #playerPoints::before {
+	content: 'Очки';
+	position: absolute;
+	color: #fff;
+	font-size: 3rem;
+	top: -40px;
+	left: 0;
+}
+#addCard {
+	width: 200px;
+	height: 50px;
+	margin-right: 30px;
+}
+#pas {
+	width: 100px;
+	height: 50px;
+	margin-right: 30px;
+}
+#newGame {
+	width: 200px;
+	height: 50px;
+}
+#result {
+	width: 600px;
+	height: 100px;
+	text-align: center;
+	margin-top: 20px;
+	color: #fff;
+	font-size: 3rem;
+}
